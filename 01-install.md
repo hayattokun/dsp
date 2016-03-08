@@ -46,13 +46,16 @@ cross-platform.
 
 Did you install Python 2 or 3? Why?  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> I already had Python 2 installed from the General Assembly class I started.
 
 ###Q2. Which Python Version Installed   
 
 How can you check the version of Python installed if you happen to be on an unfamiliar computer?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The version is stated when starting Python in Terminal (by typing "python").
+>> You can also do the following from inside Python:
+>>     import sys
+>>     print sys.version
 
  
 
