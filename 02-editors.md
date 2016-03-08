@@ -59,7 +59,7 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What terminal editor will you use? How did you make your decision?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Chose nano b/c I wanted something simple and b/c I'll probably just use Sublime more.
 
 --
 
@@ -67,6 +67,6 @@ What terminal editor will you use? How did you make your decision?
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Sublime. It came recommended during my class at GA. One feature is a bird's eye view of the file on the right side of the windown which lets you quickly figure out where you are in your file. Another is that you can easily find and highlight mutliple occurences of the same text (e.g. a variable) and edit all at once. The keyboard shortcut for multiple selection is ⌘D, which highlights the next occurence of a word you have highlighted. ⌘L highlights the line the cursor is on. To customize, I need to edit the User Settings and place them in Packages/User/Preferences.sublime-settings.
 
  
