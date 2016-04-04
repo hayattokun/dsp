@@ -150,6 +150,10 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    if s.find('not') < s.find('bad'):
+        return s[:s.find('not')] + 'good' + s[s.find('bad') + 3:]     #s where 'not...bad' is replaced with 'good'
+    else:
+        return s
     raise NotImplementedError
 
 
