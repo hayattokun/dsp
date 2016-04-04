@@ -48,7 +48,6 @@ def both_ends(s):
         return s[:2] + s[-2:]
     else:
         return ''
-    
     raise NotImplementedError
 
 
@@ -79,8 +78,7 @@ def fix_start(s):
             t[i] = '*'
         i += 1
     return ''.join(t)
-
-    #raise NotImplementedError
+    raise NotImplementedError
 
 
 def mix_up(a, b):
@@ -98,6 +96,16 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+    aList = list(a)
+    bList = list(b)
+    
+    aList2 = aList[:2]
+    bList2 = bList[:2]
+    
+    aList[:2] = bList2
+    bList[:2] = aList2
+    
+    return ''.join(aList) + ' ' + ''.join(bList)
     raise NotImplementedError
 
 
