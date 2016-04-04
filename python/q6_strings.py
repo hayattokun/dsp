@@ -18,6 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count < 10 and count >=0:
+        return 'Number of donuts: %d' % count
+    elif count >= 10:
+        return 'Number of donuts: many'
+    else:
+        return 'You can\'t have negative donuts!'
     raise NotImplementedError
 
 
@@ -37,6 +43,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    
+    if len(s) >= 2:
+        return s[:2] + s[-2:]
+    else:
+        return ''
+    
     raise NotImplementedError
 
 
@@ -56,7 +68,19 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    
+    #1. convert string s to list t
+    t = list(s)
+    #2. find/replace letters that match the first letter of the string (now first element in list t)
+    i = 1
+    
+    while i < len(s):
+        if t[0] == t[i]:
+            t[i] = '*'
+        i += 1
+    return ''.join(t)
+
+    #raise NotImplementedError
 
 
 def mix_up(a, b):
