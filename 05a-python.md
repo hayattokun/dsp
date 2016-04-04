@@ -59,6 +59,7 @@ def days_between(d1, d2):
     return abs((d2 - d1).days)
 
 days_between(date_start, date_stop)
+937
 
 b.  
 ```
@@ -74,6 +75,7 @@ def days_between(d1, d2):
     return abs((d2 - d1).days)
 
 days_between(date_start, date_stop)  
+513
 
 c.  
 ```
@@ -89,6 +91,7 @@ def days_between(d1, d2):
     return abs((d2 - d1).days)
 
 days_between(date_start, date_stop)   
+7850
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
