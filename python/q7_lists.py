@@ -89,6 +89,17 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
+    no_dups = []
+    if nums != []:
+        no_dups = [nums[0]]
+    else:
+        return no_dups
+    for n in nums:
+        if n != no_dups[-1]:
+            no_dups.append(n)
+        else:
+            pass
+    return no_dups
     raise NotImplementedError
 
 
