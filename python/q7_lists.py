@@ -39,6 +39,18 @@ def front_x(words):
     >>> front_x(['mix', 'xyz', 'apple', 'xanadu', 'aardvark'])
     ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
     """
+    a_list = []
+    x_list = []
+    for s in words:
+        if s[0] == 'x':
+            x_list.append(s)
+        else:
+            a_list.append(s)
+    a_list.sort()
+    x_list.sort()
+    for a in a_list:
+        x_list.append(a)
+    return x_list
     raise NotImplementedError
 
 
