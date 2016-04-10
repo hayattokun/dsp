@@ -8,7 +8,6 @@
 
 
 import csv
-import pandas as pd
 
 data = 'football.csv'
 h = []
