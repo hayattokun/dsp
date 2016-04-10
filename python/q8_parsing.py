@@ -8,12 +8,36 @@
 
 
 import csv
+import pandas as pd
 
-  def read_data(data):
-   # COMPLETE THIS FUNCTION
+data = 'football.csv'
+h = []
+d = []
 
-  def get_min_score_difference(self, parsed_data):
-    # COMPLETE THIS FUNCTION
+# import data
+with open(data, 'rb') as infile:
+    reader = csv.reader(infile)
+    d = list(reader)
+    h = d.pop(0)
+    #print h
+    #print d
 
-  def get_team(self, index_value, parsed_data):
-    # COMPLETE THIS FUNCTION
+# add Score Difference column
+h.append('Score Difference')
+
+# calc score_diff & append to end of data lists
+for i in range(len(d)):
+    score_diff = int(d[i][5]) - int(d[i][6])
+    d[i].append(score_diff)
+
+# find minimum score diff (Goals - Goals Allowed)
+min_score_diff = 0
+for i in range(len(d)):
+    if d[i][8] < min_score_diff:
+        min_score_diff = d[i][8]
+print min_score_diff
+
+# find team w/ min score diff
+for i in range(len(d)):
+    if d[i][8] == -34:
+        print d[i][0]
